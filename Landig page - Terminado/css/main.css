@@ -1,0 +1,188 @@
+/*General*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/*MENU*/
+
+#menu a,
+button {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+#menu a {
+  color: #313233;
+}
+/*IMAGENES*/
+
+.carousel-inner {
+  max-height: 28rem !important;
+}
+
+/*EQUIPO-IMAGENES*/
+
+#img-equipo {
+  max-height: 30rem !important;
+  width: 50%;
+}
+
+/*EQUIPO-REDES*/
+#redes {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+.redes {
+  background: url(../imag/redes\ cosiale.jpg);
+  width: 100%;
+  height: 600px;
+}
+
+.wrapper-redes {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+/*SECCION EQUIPO REDES*/
+#numeros-redes {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#numeros-redes div {
+  padding: 0 20px 0 0;
+  text-align: left;
+  height: 48px;
+}
+
+#numeros-redes div:not(:last-child) {
+  border-right: 2px solid #f396ff;
+}
+#numeros-redes div:not(:first-child) {
+  padding-left: 20px;
+}
+
+#numeros-redes p {
+  margin: 0;
+}
+
+/*CONTACTOS BACKGROUND*/
+
+#bg-contactos {
+  position: relative;
+  top: -80px;
+}
+
+#seccion-contacto {
+  background-color: #fde4fde5;
+  min-height: 500px;
+  position: relative;
+}
+
+/*fORMULARIO*/
+
+#formulario {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #daaac0d2;
+  border-radius: 5px;
+}
+
+#titulo-formulario {
+  color: #3f3f3f;
+}
+
+#msg-color {
+  color: red;
+}
+
+/*FOOTE*/
+
+footer {
+  background: #837683;
+  min-height: 100px;
+}
+footer p {
+  color: #241c21;
+  text-align: center;
+}
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #241f22;
+}
+
+/*PANTALLA ANCHA*/
+
+@media (max-width: 1200px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  #redes {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .wrapper-redes {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+/*PANTALLA SM*/
+
+@media (max-width: 768px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  #img-equipo {
+    max-height: 20rem !important;
+    width: 90%;
+  }
+  .wrapper-redes {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  #redes {
+    flex-wrap: wrap;
+  }
+  .redes img {
+    width: 100%;
+    height: auto;
+  }
+  #bg-contactos {
+    top: -120px;
+  }
+}
+/*MEDIA QUERIES PANTALLA EXTRA-SM*/
+
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+    width: 100% !important;
+  }
+  #servicios-fila-1 {
+    width: 100% !important;
+  }
+
+  .icono-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+}
